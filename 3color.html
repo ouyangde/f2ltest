@@ -57,6 +57,56 @@ $(function(){
 	displaytime();
 	showanswer();
 });
+function exporturl() {
+	var aa = [
+		"yrbwog",
+		"wobyrg",
+		"gwrbyo",
+		"bwogyr",
+		"obwrgy",
+		"rgwoby"
+	];
+	var cube = new Object();
+	for(i in aa) {
+		cube.sch = aa[i];
+		cube.pzl=1;
+		cube.bg="t";
+		cube.size=30;
+		cube.fd="nrfdlb";
+		cube.r="y45x0";
+		debug(imgurl+cube2str(cube)+"<br/>");
+		cube.r="y135x0";
+		debug(imgurl+cube2str(cube)+"<br/>");
+		cube.r="y-135x0";
+		debug(imgurl+cube2str(cube)+"<br/>");
+		cube.r="y-45x0";
+		debug(imgurl+cube2str(cube)+"<br/>");
+		cube.fd="nnnnnn";
+		debug(imgurl+cube2str(cube)+"<br/>");
+	}
+	var s;
+	for(i in aa) {
+		scheme = aa[i];
+	for(global_r1 = 0; global_r1 < 2; global_r1++)
+	for(global_r2 = 0; global_r2 < 4; global_r2++)
+	for(var i = 0; i < 3; i++)
+	for(var j = 0; j < 2; j++)
+	{
+		if(global_r1 == 1)
+		{
+			for(global_r = 0; global_r < 3; global_r++) {
+				s = getcube(i,j);
+				debug(imgurl+s[0]+"<br/>");
+			}
+		} 
+		else
+		{
+			s = getcube(i,j);
+			debug(imgurl+s[0]+"<br/>");
+		}
+	}
+	}
+}
 function imgonload() {
 	if(state == 2) {
 		imgload++; 
