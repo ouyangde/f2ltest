@@ -22,4 +22,4 @@
 然后编辑 3color.html:
 	var imgurl = "http://cube.crider.co.uk/visualcube.php?size=" + imgsize + "&fmt=png&bg=EEE";
 改为
-	var imgurl = "img/visualcube.php?size=" + imgsize + "&fmt=png&bg=EEE";
+	var imgurl = "img/visualcube.php@size=" + imgsize + "&fmt=png&bg=EEE";

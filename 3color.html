@@ -15,6 +15,7 @@ var imgsize = 60; //题目图片大小
 var excount = 18; //题目数量
 // 246  240  230 F6 F0 E6
 var imgurl = "http://cube.crider.co.uk/visualcube.php?size=" + imgsize + "&fmt=png&bg=EEE";
+//var imgurl = "img/visualcube.php@size=" + imgsize + "&fmt=png&bg=EEE";
 // 白底
 var scheme = "yrbwog";
 // 黄底
@@ -92,7 +93,7 @@ function exporturl() {
 	for(var i = 0; i < 3; i++)
 	for(var j = 0; j < 2; j++)
 	{
-		if(global_r1 == 1)
+		if(global_r1 == 0)
 		{
 			for(global_r = 0; global_r < 3; global_r++) {
 				s = getcube(i,j);
@@ -116,6 +117,10 @@ function imgonload() {
 function debug(str)
 {
 	document.getElementById("debug").innerHTML+=str;
+}
+function debug2(str)
+{
+	document.getElementById("debug").innerHTML=str;
 }
 function debugimg(img)
 {
