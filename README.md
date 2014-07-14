@@ -29,6 +29,8 @@ F2L是CFOP方法的一个步骤,同时对好魔方的前两层。
 	//var scheme = "obwrgy";
 	// 橙底
 	//var scheme = "rgwoby";
+	
+	
 
 将需要的底色取消注释即可.
 
@@ -36,7 +38,9 @@ F2L是CFOP方法的一个步骤,同时对好魔方的前两层。
 
 新建一个目录img,将subjecturls文件中的url下载到img目录中.
 然后编辑 3color.html:
-	var imgurl = "http://cube.crider.co.uk/visualcube.php?size=" + imgsize + "&fmt=png&bg=EEE";
+>	var imgurl = "http://cube.crider.co.uk/visualcube.php?size=" + imgsize + "&fmt=png&bg=EEE";
+
 改为
-	var imgurl = "img/visualcube.php@size=" + imgsize + "&fmt=png&bg=EEE";
+
+>	var imgurl = "img/visualcube.php@size=" + imgsize + "&fmt=png&bg=EEE";
 
