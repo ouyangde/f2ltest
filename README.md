@@ -39,4 +39,4 @@ F2L是CFOP方法的一个步骤,同时对好魔方的前两层。
 	var imgurl = "http://cube.crider.co.uk/visualcube.php?size=" + imgsize + "&fmt=png&bg=EEE";
 改为
 	var imgurl = "img/visualcube.php@size=" + imgsize + "&fmt=png&bg=EEE";
-=======
+
